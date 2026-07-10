@@ -1,0 +1,24 @@
+# See https://wiki.hypr.land/Configuring/Basics/Monitors/
+# List current monitors and resolutions possible: hyprctl monitors
+# Format: monitor = [port], resolution, position, scale
+
+# 1080p monitors — scale 1:1, no HiDPI needed
+env = GDK_SCALE,1
+
+# DP-1: AOC 24G11ZE — 200Hz primary, positioned at bottom
+monitor = DP-1, 1920x1080@200, 0x1080, 1
+
+# HDMI-A-1: 60Hz secondary, positioned at top
+monitor = HDMI-A-1, 1920x1080@60, 0x0, 1
+
+# Workspace assignments: 1–5 on primary (DP-1), 6–10 on secondary (HDMI-A-1)
+workspace = 1, monitor:DP-1, default:true
+workspace = 2, monitor:DP-1
+workspace = 3, monitor:DP-1
+workspace = 4, monitor:DP-1
+workspace = 5, monitor:DP-1
+workspace = 6, monitor:HDMI-A-1, default:true
+workspace = 7, monitor:HDMI-A-1
+workspace = 8, monitor:HDMI-A-1
+workspace = 9, monitor:HDMI-A-1
+workspace = 10, monitor:HDMI-A-1

@@ -1,0 +1,9 @@
+# Per-machine display layout (kept local, see config/hypr/monitors.conf.example)
+config/hypr/monitors.conf
+
+# Editor / timestamped backups
+*.bak
+*.bak.*
+
+# OS cruft
+.DS_Store
